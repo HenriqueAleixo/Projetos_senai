@@ -1,0 +1,31 @@
+menu "Heltec SSD1306 Oled Configuration"
+
+config I2C_SDA_PIN
+    int "I2C_SDA_PIN"
+    range 0 35
+    default 4
+    help
+	Pin Number where the SDA (I2C) pin of the Display Oled module is connected to.
+
+config I2C_SCL_PIN
+    int "I2C_SCL_PIN"
+    range 0 35
+    default 15
+    help
+	Pin Number where the SCL (I2C) pin of the Display Oled module is connected to.
+
+config I2C_CHANNEL
+    int "I2C_CHANNEL"
+    range 0 3
+    default 0
+    help
+	Pin Number to be used as the I2C_CHANNEL.
+
+config OLED_PIN_RESET
+    int "OLED_PIN_RESET"
+    range 0 35
+    default 16
+    help
+	Pin Number where the Reset pin of the Display Oled module is connected to.
+
+endmenu
